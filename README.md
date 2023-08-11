@@ -50,6 +50,15 @@ size(self): This method returns the number of elements currently in the stack (s
 
 isEmpty(self): This method checks if the stack is empty by comparing the size of the stack (returned by the size method) with zero. It returns True if the stack is empty, otherwise False.
 
+# Stack and Queue inbuilt Libraries in Python
+In Python, you can create and manage queues using the built-in queue module, which provides implementations of various queue data structures. The queue module offers three main classes for implementing different types of queues:
 
+Queue: This class provides a basic FIFO (First-In-First-Out) queue implementation. It is a synchronized (thread-safe) queue and is typically used for communication between multiple threads.
+
+LifoQueue: This class provides a LIFO (Last-In-First-Out) queue implementation. It is also synchronized and useful for implementing a stack-like behavior.
+
+PriorityQueue: This class provides a priority queue implementation. Elements are dequeued based on their priority, which is determined by the order they were inserted or by a specific priority assigned during enqueue.
+
+Queue module provides thread-safe implementations of these data structures. If you are working with multiple threads, you can use these queues to safely exchange data between threads. If you don't need thread safety, you can also consider using Python's built-in list data structure as a basic queue or stack.
 
 
