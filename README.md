@@ -1,5 +1,4 @@
-# pythonStack
-A repo to record my learning of Stack in Python 
+# pythonStack 
 
 A stack is a linear data structure that stores items in a Last-In/First-Out (LIFO) or First-In/Last-Out (FILO) manner. In stack, a new element is added at one end and an element is removed from that end only. The insert and delete operations are often called push and pop.
 
@@ -8,15 +7,14 @@ Stack in python
 
 The functions associated with stack are:
 
-empty() – Returns whether the stack is empty – Time Complexity: O(1)
+isEmpty() – Returns whether the stack is empty – Time Complexity: O(1)
 size() – Returns the size of the stack – Time Complexity: O(1)
-top() / peek() – Returns a reference to the topmost element of the stack – Time Complexity: O(1)
+top()– Returns a reference to the topmost element of the stack – Time Complexity: O(1)
 push(a) – Inserts the element ‘a’ at the top of the stack – Time Complexity: O(1)
 pop() – Deletes the topmost element of the stack – Time Complexity: O(1)
 
 
 # Stack Using List
-The Stack class is defined with several methods for managing a stack data structure.
 
 __init__(self): This is the constructor method that initializes a new instance of the Stack class. It creates an empty list named __data to store the elements of the stack. The double underscores before data indicate that it's a private variable, meaning it should not be directly accessed from outside the class.
 
@@ -32,7 +30,7 @@ isEmpty(self): This method checks if the stack is empty by comparing the size of
 
 
 # Stack using Linked List
- Implementing a stack using a linked list-based approach. The linked list nodes hold the stack elements, with the __head attribute pointing to the top node.
+The linked list nodes hold the stack elements, with the __head attribute pointing to the top node.
  Node Class:
 The Node class is defined with the following attributes and methods:
 __init__(self, data): The constructor initializes a new instance of the Node class with a given data value. It also initializes the next attribute as None to represent that this node is not yet connected to another node.
