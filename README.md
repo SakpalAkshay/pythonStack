@@ -61,4 +61,5 @@ PriorityQueue: This class provides a priority queue implementation. Elements are
 
 Queue module provides thread-safe implementations of these data structures. If you are working with multiple threads, you can use these queues to safely exchange data between threads. If you don't need thread safety, you can also consider using Python's built-in list data structure as a basic queue or stack.
 
-
+# Checking Balanced Parenthesis
+ Stack-based approach to check if the brackets in the input string are balanced or not. It iterates through each character in the string, maintains a stack of opening brackets encountered, and matches them with closing brackets. If at any point the brackets are not properly balanced, the function returns False, and if all brackets are balanced, it returns True.
