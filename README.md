@@ -63,3 +63,19 @@ Queue module provides thread-safe implementations of these data structures. If y
 
 # Checking Balanced Parenthesis
  Stack-based approach to check if the brackets in the input string are balanced or not. It iterates through each character in the string, maintains a stack of opening brackets encountered, and matches them with closing brackets. If at any point the brackets are not properly balanced, the function returns False, and if all brackets are balanced, it returns True.
+
+
+ # Reverse a Stack using Recursion
+ The function reverse is defined with two arguments, s1 and s2.
+
+The base case of the recursion is defined: if the length of s1 is less than or equal to 1, the function returns immediately. This is because a single element or an empty list is already considered reversed.
+
+A while loop is used to transfer elements from s1 to s2 until there is only one element left in s1. This loop is used to pop elements from the end of s1 (using the pop() method) and append them to s2.
+
+The last remaining element in s1 is then popped and stored in the lastelement variable.
+
+Another while loop is used to transfer elements from s2 back to s1. This loop is used to pop elements from the end of s2 and append them to s1.
+
+Now, the reverse function is recursively called with the modified lists s1 and s2.
+
+After the recursive call, the lastelement (which was the original last element of s1) is appended back to s1.
