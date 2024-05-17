@@ -11,11 +11,13 @@ class Stack:
 
         if self.isEmpty():
             print("Empty Stack !!!")
+            return
         return self.__data.pop()
 
     def top(self):
         if self.isEmpty():
             print("Empty Stack !!!")
+            return
         return self.__data[len(self.__data) - 1]
 
     def size(self):
